@@ -938,3 +938,25 @@ a {
         transform: translateY(0);
 }
 }
+
+.add-to-cart-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff523b 60%, #ff6347 100%);
+    color: #fff;
+    padding: 12px 36px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 16px rgba(255,82,59,0.08);
+    margin-top: 18px;
+    letter-spacing: 1px;
+}
+
+.add-to-cart-btn:hover {
+    background: linear-gradient(90deg, #ff6347 60%, #ff523b 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(255,82,59,0.15);
+}
