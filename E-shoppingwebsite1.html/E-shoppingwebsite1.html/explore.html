@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore Best Products | E-Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            background: radial-gradient(#fff,#ffd6d6);
+
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        nav a {
+            color: #211d1d;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+        .explore-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+
+        }
+        .explore-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #222;
+            text-align: center;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: box-shadow 0.2s;
+        }
+        .product-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+        }
+        .product-image {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+        .product-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+            text-align: center;
+        }
+        .product-desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 0.8rem;
+            text-align: center;
+        }
+        .product-price {
+            font-size: 1.1rem;
+            color: #1a8917;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .explore-btn {
+            background: #1a8917;
+            color: #fff;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        .explore-btn:hover {
+            background: #166d13;
+        }
+        @media (max-width: 600px) {
+            .explore-title {
+                font-size: 1.3rem;
+            }
+            .product-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="navbar">
+                <div class="logo">
+                   <a href="index.html"><img src="./logo1.png"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                       <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                       <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="https://cdn-icons-png.flaticon.com/128/17137/17137522.png" height="60px"></a>
+                <img src="https://cdn-icons-png.flaticon.com/128/6015/6015685.png" class="menu-icon">
+            </div>
+    <section class="explore-section">
+        <div class="explore-title">Explore Best Products</div>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.SGt8I-OB3VfC_iGeyIHPlQHaHa?w=183&h=183&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Wireless Headphones" class="product-image">
+                <div class="product-name">Wireless Headphones</div>
+                <div class="product-desc">High-quality sound, noise cancellation, 20h battery life.</div>
+                <div class="product-price">$59.99</div>
+                <a href="./cart.html"><button class="explore-btn">Add to Cart</button></a>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.WjqHEdnVhltGQPokPfbXbAHaJW?w=164&h=207&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Smart Watch" class="product-image">
+                <div class="product-name">Smart Watch</div>
+                <div class="product-desc">Fitness tracking, heart rate monitor, waterproof design.</div>
+                <div class="product-price">$89.99</div>
+                <a href="./cart.html"><button class="explore-btn">Add to Cart</button></a>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=400&q=80" alt="Bluetooth Speaker" class="product-image">
+                <div class="product-name">Bluetooth Speaker</div>
+                <div class="product-desc">Portable, deep bass, 12h playtime, splash-proof.</div>
+                <div class="product-price">$39.99</div>
+                <a href="./cart.html"><button class="explore-btn">Add to Cart</button></a>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Running Shoes" class="product-image">
+                <div class="product-name">Running Shoes</div>
+                <div class="product-desc">Lightweight, breathable, shock-absorbing sole.</div>
+                <div class="product-price">$49.99</div>
+                <a href="./cart.html"><button class="explore-btn">Add to Cart</button></a>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Classic Backpack" class="product-image">
+                <div class="product-name">Classic Backpack</div>
+                <div class="product-desc">Spacious, durable, water-resistant, multiple pockets.</div>
+                <div class="product-price">$29.99</div>
+                <a href="./cart.html"><button class="explore-btn">Add to Cart</button></a>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Sunglasses" class="product-image">
+                <div class="product-name">Sunglasses</div>
+                <div class="product-desc">UV protection, stylish design, lightweight frame.</div>
+                <div class="product-price">$19.99</div>
+                <a href="./cart.html"><button class="explore-btn">Add to Cart</button></a>
+            </div>
+
+             <div class="product-card">
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.HctSOjZ1M_O3Coj4ziNzKQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="shoes" class="product-image">
+                <div class="product-name">Shoes</div>
+                <div class="product-desc">classic  design, lightweight.</div>
+                <div class="product-price">$19.99</div>
+                <a href="./cart.html"><button class="explore-btn">Add to Cart</button></a>
+            </div>
+
+             <div class="product-card">
+                <img src="https://th.bing.com/th/id/OIP.1jGTllWpYS7X8qLrp02v3gHaHa?w=213&h=213&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Heels" class="product-image">
+                <div class="product-name">heals</div>
+                <div class="product-desc"> stylish design, lightweight frame.</div>
+                <div class="product-price">$32.99</div>
+                <a href="./cart.html"><button class="explore-btn">Add to Cart</button></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
